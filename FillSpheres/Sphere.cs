@@ -8,7 +8,7 @@ namespace FillSpheres
     public class Sphere
     {
         // Variáveis
-        private Color color;
+        private readonly Color color;
         private float radius;
         private int timesThrown;
 
