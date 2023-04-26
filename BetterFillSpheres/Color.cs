@@ -13,6 +13,15 @@ namespace BetterFillSpheres
         public byte Blue { get; set; }
         public byte Alpha { get; set; }
 
+        // Property pattern num switch
+        public string Name => this switch
+        {
+            { Red: 255, Green: 0, Blue: 0, Alpha: 255 } => "Red 100%",
+            { Red: 0, Green: 255, Blue: 0, Alpha: 255 } => "Green 100%",
+            { Red: 0, Green: 0, Blue: 255, Alpha: 255 } => "Blue 100%",
+            _ => "Mixed",
+        };
+
         // Construtor que aceita todos os parâmetros
         public Color(byte red, byte green, byte blue, byte alpha)
         {

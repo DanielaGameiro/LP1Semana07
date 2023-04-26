@@ -38,6 +38,11 @@ namespace BetterFillSpheres
             littleWhite.Throw();
             Console.WriteLine(
                 $"Esfera branca foi atirada {littleWhite.TimesThrown}x");
+
+            // Imprime o Name de alguma cor
+            Console.WriteLine(green.Name);
+            Console.WriteLine(white.Name);
+            
         }
     }
 }
